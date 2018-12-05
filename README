@@ -1,0 +1,34 @@
+To run this project, the machine should have nodejs, npm and mysql preinstalled. 
+
+
+Steps to run the project:
+
+1.	To upload the sql file:	mysql -u username -p ecommDB < ecommDB.sql
+
+2.	In app.js, edit line number 9 and 10. It contains the database login credentials.
+
+3. 	To run the nodejs project, cd to dir casa and run "npm start" on the terminal.
+
+Account Details to login:
+
+1.	without admin privilege
+	{
+		"email_id":"p1@y.com",
+		"password":"pass"
+	}
+
+2.	with admin privilege
+	{
+		"email_id":"vaibhav@gmail.com",
+		"password":"pass"
+	}
+
+You can also create new users.
+
+Different api endpoints
+
+1.	http://localhost:8000/users/login			POST
+2.  	http://localhost:8000/users/signup			POST
+3.	http://localhost:8000/orders/allOrders/2/2		GET,2,2 are offset and limit respectively to query table,could be changed
+4.	http://localhost:8000/orders/userOrders			GET
+5.	http://localhost:8000/orders/orderDetails/6		GET, 6 is the order number for which we want details, could be changed
