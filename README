@@ -32,3 +32,6 @@ Different api endpoints
 3.	http://localhost:8000/orders/allOrders/2/2		GET,2,2 are offset and limit respectively to query table,could be changed
 4.	http://localhost:8000/orders/userOrders			GET
 5.	http://localhost:8000/orders/orderDetails/6		GET, 6 is the order number for which we want details, could be changed
+
+To login or signup, while using postman, set "Content-Type : application/json" in Headers
+For other type of requests, set "Authorization : Bearer <token>" in Header. This token is the one that gets generated after the login.
