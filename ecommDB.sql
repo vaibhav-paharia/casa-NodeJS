@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 06, 2018 at 12:40 AM
+-- Generation Time: Dec 06, 2018 at 11:17 AM
 -- Server version: 5.7.24-0ubuntu0.16.04.1
 -- PHP Version: 7.0.32-0ubuntu0.16.04.1
 
@@ -39,12 +39,12 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`order_id`, `customer_id`, `date_time`, `amount`, `total_items`) VALUES
-(1, 1, '2018-12-02 13:16:49', '100', 1),
-(2, 2, '2018-12-02 13:16:49', '230', 2),
-(3, 3, '2018-12-02 13:20:47', '520', 3),
-(4, 4, '2018-12-02 13:20:47', '700', 4),
+(1, 9, '2018-12-02 13:16:49', '100', 1),
+(2, 10, '2018-12-02 13:16:49', '230', 2),
+(3, 13, '2018-12-02 13:20:47', '520', 3),
+(4, 13, '2018-12-02 13:20:47', '700', 4),
 (5, 11, '2018-12-02 17:35:05', '230', 2),
-(6, 12, '2018-12-02 13:20:47', '700', 4);
+(6, 14, '2018-12-02 13:20:47', '700', 4);
 
 -- --------------------------------------------------------
 
@@ -128,18 +128,13 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email_id`, `password`, `admin_status`, `active_status`) VALUES
-(1, 'vai1', 'v1@gmail.com', 'p1', 1, 1),
-(2, 'vai2', 'v2', 'p2', 0, 1),
-(3, 'vai3', 'v3@gmail.com', 'p3', 0, 1),
-(4, 'vai4', 'v4@gmail.com', 'p4', 0, 1),
-(5, 'vai5', 'v5@gmail.com', 'p5', 1, 1),
-(6, 'td1', 'td2', 'td3', 0, 1),
-(8, '33', '33', '33', 0, 1),
 (9, 'dfsd', 'pi1@y.com', '$2b$10$j/F8iJgY6O5qck46ukZOV.ZstGwIIHDSb9rRCwM9l0K7KTd9VrU7W', 0, 1),
 (10, 'dfsd', 'p11@y.com', '$2b$10$ur3IYzyimRuw3cQu5w4vCuvztpPD0FR6SXr3eeinDtIBfEg1Y2W8C', 0, 1),
 (11, 'new', 'p1@y.com', '$2b$10$2OzSKG7HXLLQpRxg8q4qIubPl14MiRr1.osWkqBl/N0hd/Ou2yjjC', 0, 1),
-(12, 'vaibhav', 'vaibhav@gmail.com', 'pass', 1, 1),
-(13, 'abcd', 'abcd@gmail.com', '$2b$10$bUOhgQC1ipFQvQMhDsWWdu0qnhjl10iQ12Mp2KuQXyod6/2GBU2Q6', 0, 1);
+(13, 'abcd', 'abcd@gmail.com', '$2b$10$bUOhgQC1ipFQvQMhDsWWdu0qnhjl10iQ12Mp2KuQXyod6/2GBU2Q6', 0, 1),
+(14, 'vaibhav', 'vaibhav@gmail.com', '$2b$10$yVT6P7hG4uCS9w5eF1ZEI.MsUZ1bZxkILnexfOhMHwokA.7FDBsiq', 1, 1),
+(15, 'vaibhav', 'v15@gmail.com', '$2b$10$asdjuLgVdPBFys7I5QQI/uLaBothVWxYrEFu4wVJukmTBDnxd7qRW', 0, 1),
+(16, 'vaibhav', 'temp@gmail.com', '$2b$10$QuMO86jjMsJtLoP15B1K0uB.AELOCjBbTxhjOmC8sKzii8wvnJmjm', 0, 1);
 
 --
 -- Indexes for dumped tables
@@ -185,7 +180,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- Constraints for dumped tables
 --
